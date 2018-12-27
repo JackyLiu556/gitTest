@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <style>
+    .box {
+      height: 100px;
+      background-color: #7952b3;
+      border: 1px solid white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-3">
+    <!-- 均分排列 -->
+    <div class="row justify-content-between">
+      <div class="col-3">
+        <div class="box"></div>
+      </div>
+      <div class="col-3">
+        <div class="box"></div>
+      </div>
+    </div>
+    <hr>
+    <!-- 均分排列 -->
+    <div class="row justify-content-between">
+      <div class="col-3">
+        <div class="box"></div>
+      </div>
+      <div class="col-3">
+        <div class="box"></div>
+      </div>
+      <div class="col-3">
+        <div class="box"></div>
+      </div>
+    </div>
+    <hr>
+    <!-- 靠右排列 -->
+    <div class="row justify-content-end">
+      <div class="col-3">
+        <div class="box"></div>
+      </div>
+    </div>
+    <hr>
+    <!-- 靠右排列 -->
+    <div class="row flex-column">
+      <div class="col-3">
+        <div class="box"></div>
+      </div>
+      <div class="col-3 align-self-end">
+        <div class="box"></div>
+      </div>
+      <div class="col-3">
+        <div class="box"></div>
+      </div>
+      <div class="col-3 align-self-end">
+        <div class="box"></div>
+      </div>
+    </div>
+    <hr>
+    <!-- 垂直排列 -->
+    <h2>外層屬性</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>屬性</th>
+          <th>組合</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>flex</td>
+          <td>.flex-{size}-{flex 屬性}</td>
+          <td>
+            <pre>
+.d-flex
+.d-inline-flex</pre>
+          </td>
+        </tr>
+        <tr class="table-warning">
+          <td>flex-direction</td>
+          <td>.flex-{size}-{direction 屬性}</td>
+          <td>
+            <pre>
+.flex-row
+.flex-row-reverse
+.flex-column
+.flex-column-reverse</pre>
+          </td>
+        </tr>
+        <tr class="table-warning">
+          <td>justify-content</td>
+          <td>.justify-content-{size}-{justify-content 屬性}</td>
+          <td>
+            <pre>
+.justify-content-start
+.justify-content-end
+.justify-content-center
+.justify-content-between
+.justify-content-around</pre>
+          </td>
+        </tr>
+        <tr class="table-warning">
+          <td>align-items</td>
+          <td>.align-items-{size}-{align-items 屬性}</td>
+          <td>
+            <pre>
+.align-items-start
+.align-items-end
+.align-items-center
+.align-items-baseline
+.align-items-stretch</pre>
+          </td>
+        </tr>
+        <tr>
+          <td>flex-wrap</td>
+          <td>.flex-{size}-{flex-wrap 屬性}</td>
+          <td>
+            <pre>
+.flex-nowrap
+.flex-wrap
+.flex-wrap-reverse</pre>
+          </td>
+        </tr>
+        <tr>
+          <td>align-content (限制 wrap)</td>
+          <td>.flex-{size}-{align-content 屬性}</td>
+          <td>
+            <pre>
+.align-content-start
+.align-content-end
+.align-content-center
+.align-content-around
+.align-content-stretch</pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>內層屬性</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>屬性</th>
+          <th>組合</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-warning">
+          <td>align-self</td>
+          <td>.align-self-{size}-{align-self 屬性}</td>
+          <td>
+            <pre>
+.align-self-start
+.align-self-end
+.align-self-center
+.align-self-baseline
+.align-self-stretch</pre>
+          </td>
+        </tr>
+        <tr>
+          <td>order</td>
+          <td>.order-{order 數值}</td>
+          <td>
+            <pre>
+.order-1
+.order-2
+.order-3
+...
+.order-12</pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
