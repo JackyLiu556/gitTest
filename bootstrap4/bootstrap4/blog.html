@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-hang-TW">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <style>
+    	.breadcrumb{
+    		background-color: transparent;
+    	}
+    	.text-hexschool{
+    		color:#00cc99 !important;
+    	}
+/*    	i:before{
+			display: none;
+    	}*/
+    </style>
+  </head>
+  <body>
+   
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00cc99" >
+	    <a class="navbar-brand" href="#"><i class="far fa-gem"></i>六角部落格</a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+	        <div class="navbar-nav">
+	            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+	            <a class="nav-item nav-link" href="#">Blog</a>
+	        </div>
+	    </div>
+	</nav>
+
+	<div class="container">
+		 <ol class="breadcrumb pl-0">
+		    <li class="breadcrumb-item"><a href="#" class="text-hexschool">Home</a></li>
+		    <li class="breadcrumb-item"><a href="#" class="text-hexschool">Library</a></li>
+		    <li class="breadcrumb-item active" aria-current="page">Data</li>
+		 </ol>
+		 <h1 class="text-hexschool">Bootstrap 4 繁體中文手冊</h1>
+
+		 <div class="row">
+		 	<div class="col-md-8">
+		 		<div class="my-2 text-secondary">
+		 			<small>
+		 				<span class="mr-3"><i class="far fa-user pr-1"></i>卡斯伯</span>
+		 				<span class="mr-3">2017/08/13</span>
+		 				<span><i class="fas fa-tag pr-1"></i>event</span>
+		 			</small>
+		 		</div>
+		 		<article>
+					<p>Bootstrap 是目前最主流的 CSS 框架，由於他包含了大量的元件以及具有良好的架構，在實際運用及擴增也都是非常容易，也越來越多開發者協同一起開發 (Github 上有超過 10 萬個 Star)。如今第四版 Beta (Bootstrap 4 Beta) 也在 2017/8/10 釋出，我們先來看看他有什麼樣的改變吧！</p>
+					<h2 class="text-secondary">Bootstrap 4 的特色</h2>
+					<p>Bootstrap 4 Beta 經過了 Alpha 六個版本的歷練，重新翻修了大量元件以及加入許多新的元素，如果你沒有用過 Alpha 的任何版本，提供了以下摘要讓您快速了解第四版有什麼新新聞：</p>
+					<ul>
+					    <li>從 Less 到 Sass: 自從 Sass 不在只能使用 Ruby 編譯後，Libsass 有更快的編譯效率，加上 Sass 本身具有龐大的開發社群，所以 Bootstrap 從 Less 改用 Sass 囉！</li>
+					    <li>Flexbox 以及強化的網格系統: 網格系統不在使用 <code>float</code>，進而改用 <code>flexbox</code>，讓行動裝置及桌面裝置有更彈性的排版方法。</li>
+					</ul>
+					<img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2Fbootstrap4.png?alt=media&token=0b014ac6-b99b-46e7-8336-3fbfda1da3c2">
+				</article>
+
+				<div class="card">
+				    <div class="card-header">
+				        留言回覆
+				    </div>
+				    <div class="card-body">
+				    	<div class="media mb-4">
+						  <img class="mr-3" src="https://randomuser.me/api/portraits/men/85.jpg" width="64" height="64" alt="Generic placeholder image">
+						  <div class="media-body">
+						    <h5 class="mt-0">卡斯伯</h5>
+						      <div class="form-group">						    
+							    <textarea class="form-control" rows="3"></textarea>
+							    <button class="btn btn-light btn-block mt-2">Submit</button>
+							  </div>
+						  </div>
+						</div>
+						<div class="media">
+						  <img class="mr-3" src="https://randomuser.me/api/portraits/women/57.jpg" width="64" height="64" alt="Generic placeholder image">
+						  <div class="media-body">
+						    <h5 class="mt-0">Amy</h5>
+						    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+						  </div>
+						</div>
+				    </div>
+				</div>
+		 	</div>
+		 	<div class="col-md-4">
+		 		<h2 class="text-secondary">Tags</h2>
+		 		<a href="#" class="badge badge-info mr-1">
+		 			<i class="fas fa-tag">Info</i>
+		 		</a>
+				<a href="#" class="badge badge-info">
+		 			<i class="fas fa-tag">bootstrap</i>
+		 		</a>
+		 	</div>
+		 </div>
+		 <footer class="bg-light py-4 mt-3">
+			<div class="container d-flex justify-content-between">
+				<div>© Copyright 2017 六角部落格</div>
+				<div>
+					<a href="#" class="text-hexschool"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

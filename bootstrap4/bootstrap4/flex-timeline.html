@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-hang-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<style>
+		.box{
+			height: 100px;
+			background-color:#7952B3;
+			border:1px solid #fff;
+		}
+
+		.timeline-section{
+			position: relative;
+		}
+		.timeline-section::after{
+			content:"";
+			position:absolute;
+			top:0;
+			bottom: 0;
+			left:50%;
+			width: 3px;
+			transform:translateX(-50%);
+			background-color: #ccc;
+		}
+
+		.timeline-pointer{
+			position:relative;
+		}
+		.timeline-pointer::after{
+			content:"";
+			position:absolute;
+			top:0;
+			bottom: 0;
+			left:50%;
+			width:10px;
+			height:10px;
+			border-radius: 50%;
+			border:3px solid #ccc;
+			transform:translateX(-50%);	
+			background-color: #fff;
+			z-index: 1;
+		}
+
+		@media (max-width: 576px) {
+			.timeline-section::after,
+			.timeline-pointer::after{
+				display: none;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="timeline-section">
+			<div class="row timeline-pointer my-3">
+				<div class="col-sm-6">
+					<h3>這是一段標題</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nulla, officia beatae. Animi est harum, ipsa ut veniam, amet sit ex voluptatem asperiores nemo reiciendis quod. Incidunt doloremque eius iure!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sint ipsa quaerat architecto voluptatem possimus aperiam inventore nemo obcaecati animi. Similique, laborum harum dolores cum repudiandae illum amet, distinctio suscipit?</p>
+				</div>
+				<div class="col-sm-6">
+					<div class="box"></div>
+				</div>
+			</div>
+			<div class="row timeline-pointer my-3 flex-sm-row-reverse">
+				<div class="col-sm-6">
+					<h3>這是一段標題</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nulla, officia beatae. Animi est harum, ipsa ut veniam, amet sit ex voluptatem asperiores nemo reiciendis quod. Incidunt doloremque eius iure!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sint ipsa quaerat architecto voluptatem possimus aperiam inventore nemo obcaecati animi. Similique, laborum harum dolores cum repudiandae illum amet, distinctio suscipit?</p>
+				</div>
+				<div class="col-sm-6">
+					<div class="box"></div>
+				</div>
+			</div>
+			<div class="row timeline-pointer my-3">
+				<div class="col-sm-6">
+					<h3>這是一段標題</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi illo, alias fugit. Nobis ipsam ullam consequuntur blanditiis officia tempora dolorum quas unde accusamus distinctio! Porro dolorem, corrupti! Ducimus, rem, illo.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat atque blanditiis quasi at, voluptate nulla, commodi, unde sequi dolor quibusdam fugiat labore, officiis? Laudantium recusandae tenetur, architecto magnam amet. Dolore?</p>
+				</div>
+				<div class="col-sm-6">
+					<div class="box"></div>
+				</div>
+			</div>
+			<div class="row timeline-pointer my-3 flex-sm-row-reverse">
+				<div class="col-sm-6">
+					<h3>這是一段標題</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed magni quaerat in quia ea est quo culpa pariatur qui beatae possimus omnis quasi, placeat provident distinctio hic assumenda. Eum, cupiditate!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque corporis vel mollitia, soluta dolore laborum adipisci doloribus omnis tenetur animi, amet obcaecati fugiat consectetur vitae autem harum vero consequuntur aspernatur.</p>
+				</div>
+				<div class="col-sm-6">
+					<div class="box"></div>
+				</div>
+			</div>
+			<div class="row timeline-pointer my-3">
+				<div class="col-sm-6">
+					<h3>這是一段標題</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed magni quaerat in quia ea est quo culpa pariatur qui beatae possimus omnis quasi, placeat provident distinctio hic assumenda. Eum, cupiditate!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sint ipsa quaerat architecto voluptatem possimus aperiam inventore nemo obcaecati animi. Similique, laborum harum dolores cum repudiandae illum amet, distinctio suscipit?</p>
+				</div>
+				<div class="col-sm-6">
+					<div class="box"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+</body>
+</html>

@@ -1,0 +1,233 @@
+* {
+  outline: 1px solid red; }
+
+@media screen and (max-width: 575px) {
+  body.running {
+    opacity: 0;
+    background-image: url(../svg/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #003399;
+    background-size: 130vw;
+    width: 100%;
+    height: 100%;
+    animation: logo 3s linear infinite; }
+
+  @keyframes logo {
+    0% {
+      background-size: 130vw; }
+    50% {
+      background-size: 160vw; }
+    100% {
+      background-size: 130vw; } }
+  body {
+    background-color: #003399; }
+
+  nav {
+    display: none;
+    width: 100vw;
+    height: 15vw; }
+    nav div.nav-logo {
+      font-size: 12px;
+      background-color: #fff; }
+    nav div.nav-content {
+      padding: 0; }
+      nav div.nav-content ul {
+        list-style-type: none;
+        background-color: rgba(10, 10, 10, 0.8);
+        width: 100vw; }
+        nav div.nav-content ul li {
+          font-size: 12px; }
+    nav #menu_control {
+      position: absolute;
+      opacity: 0;
+      top: -10px; }
+      nav #menu_control:checked ~ header > .hb {
+        transition: .4s;
+        transform: rotate(225deg);
+        width: 6vw; }
+      nav #menu_control:checked ~ header > .hb:after {
+        opacity: 0; }
+      nav #menu_control:checked ~ header > .hb:before {
+        transition: .4s;
+        transform: rotate(90deg);
+        width: 6vw;
+        left: 0;
+        top: 0; }
+      nav #menu_control:checked ~ header > .menu {
+        left: 0; }
+    nav header {
+      background-color: #fff;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 3px 10px;
+      width: 100%;
+      height: 15vw; }
+      nav header .TeamName {
+        z-index: 50;
+        font-size: 5vw;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 15vw; }
+        nav header .TeamName .logo img {
+          width: 5vw;
+          height: 5vw; }
+      nav header .hb {
+        display: block;
+        width: 6vw;
+        height: 0.7vw;
+        top: 7.5vw;
+        left: 5vw;
+        position: absolute;
+        transition: .4s;
+        background-color: #1964B7;
+        cursor: pointer; }
+        nav header .hb:before {
+          content: '';
+          display: block;
+          width: 6vw;
+          height: 0.7vw;
+          position: absolute;
+          top: 1.5vw;
+          transition: .4s;
+          background-color: #1964B7; }
+        nav header .hb:after {
+          content: '';
+          display: block;
+          width: 6vw;
+          height: 0.7vw;
+          position: absolute;
+          top: -1.5vw;
+          transition: .4s;
+          background-color: #1964B7; }
+      nav header .menu {
+        position: fixed;
+        height: calc( 100vh - 42px );
+        width: 100%;
+        left: -100%;
+        background-color: rgba(10, 10, 10, 0.8);
+        transition: .4s;
+        z-index: 99;
+        top: 15vw; }
+        nav header .menu a {
+          display: block;
+          padding: 3vh;
+          color: #fff;
+          text-decoration: none;
+          text-align: center;
+          font-size: 18px; }
+          nav header .menu a:hover {
+            color: #e67e22; }
+        nav header .menu a + a {
+          border-top: 1px solid #999; }
+
+  .banner > img {
+    width: 20vw;
+    height: 20vw; }
+
+  .wordRowOne {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center; }
+    .wordRowOne img {
+      opacity: 0;
+      transform: scale(2, 2);
+      height: 25vw;
+      width: 25vw; }
+    .wordRowOne img.sign {
+      width: 10vw; }
+    .wordRowOne img.wordScale {
+      opacity: 1;
+      transform: scale(1, 1);
+      animation: wordScale 0.5s; }
+
+  .wordRowOne, .wordRowSecond {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center; }
+    .wordRowOne img.wordScale, .wordRowSecond img.wordScale {
+      opacity: 1;
+      transform: scale(1, 1);
+      animation: wordScale 0.5s; }
+    .wordRowOne img, .wordRowSecond img {
+      opacity: 0;
+      transform: scale(2, 2);
+      height: 25vw;
+      width: 25vw; }
+
+  @keyframes wordScale {
+    0% {
+      opacity: 0;
+      transform: scale(2, 2); }
+    100% {
+      opacity: 1;
+      transform: scale(1, 1); } }
+  .camera {
+    position: relative;
+    top: 70vw;
+    display: inline-block;
+    width: 100%;
+    perspective-origin: center center;
+    perspective: 20px; }
+    .camera .space {
+      position: relative;
+      transform-style: preserve-3d;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      line-height: 30vw;
+      margin: auto;
+      width: 15vw;
+      height: 30vw;
+      transform: rotateX(65deg); }
+      .camera .space .box {
+        position: relative;
+        line-height: 30vw;
+        margin: auto;
+        width: 15vw;
+        height: 30vw;
+        background-size: 36% 4%; }
+        .camera .space .box:before {
+          content: "";
+          width: 50%;
+          width: 100%;
+          height: 350%;
+          z-index: 3;
+          position: absolute;
+          top: -30px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          animation-iteration-count: infinite;
+          animation-duration: .01s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-direction: normal;
+          animation-fill-mode: none;
+          animation-play-state: running;
+          animation: road 3s linear infinite;
+          background: linear-gradient(to right, #1964B7 90%, transparent 0), linear-gradient(#1964B7 30%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.9) 60%, #1964B7 60%);
+          background-size: 36% 4%;
+          transform: translate3d(0, 0px, 0px); }
+
+  .cameraUp {
+    top: 40vw;
+    animation: cameraUp 1s; }
+
+  @keyframes cameraUp {
+    0% {
+      top: 70vw; }
+    100% {
+      top: 40vw; } }
+  @keyframes road {
+    0% {
+      transform: translate3d(0, -55px, 0px); }
+    100% {
+      transform: translate3d(0, -39px, 0px); } } }
+
+/*# sourceMappingURL=index.css.map */
